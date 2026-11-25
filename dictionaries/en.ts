@@ -20,15 +20,11 @@ export const en = {
       { href: "#faq", label: "FAQ" },
     ],
     download: "Download",
-    comingSoon: "Coming soon",
     switchLanguage: "Cambiar a español",
   },
   store: {
     badgeAlt: "Get it on Google Play",
-    comingSoon: "Coming soon to Google Play",
     androidOnly: "Free · Android 8.0 or newer",
-    testerCta: "Want to try it before launch? Write to us",
-    testerSubject: "I want to test Water Saver",
   },
   hero: {
     eyebrow: "Free app for Android",
@@ -145,47 +141,34 @@ export const en = {
         question: "Does it record what happens in the bathroom?",
         answer:
           "No. The app uses the microphone only to hear whether the water is running. It records nothing and sends no audio. Your showers stay on your phone.",
-        prelaunchOnly: false,
       },
       {
         question: "How accurate is it?",
         answer:
           "It measures approximately: times and liters are estimates. Calibrating once with a jug or a bucket adjusts it to your own shower, and you can recalibrate whenever you want.",
-        prelaunchOnly: false,
       },
       {
         question: "Do I need to install anything in the shower?",
         answer:
           "No. You only need your phone. Leave it in the bathroom, away from the water, and it works with the screen off.",
-        prelaunchOnly: false,
       },
       {
         question: "Is it available for iPhone?",
         answer: "Android only for now, on Android 8.0 or newer.",
-        prelaunchOnly: false,
       },
       {
         question: "How much does it cost?",
         answer: "It's free. No ads and no accounts.",
-        prelaunchOnly: false,
       },
       {
         question: "Can my kids use it?",
         answer:
           "Yes, together with an adult. It is made for families: the drop speaks with big emoji and few words, so the whole house can join in.",
-        prelaunchOnly: false,
       },
       {
         question: "What happens when I pause to soap up?",
         answer:
           "Pauses don't count. The app counts only the time the water runs, and every time you turn it off the drop tells you how much water you have left.",
-        prelaunchOnly: false,
-      },
-      {
-        question: "When can I download it?",
-        answer:
-          "Water Saver is in a closed test right now and will be on Google Play very soon. If you want to try it before launch, write to us.",
-        prelaunchOnly: true,
       },
     ],
   },
@@ -197,7 +180,7 @@ export const en = {
   },
   footer: {
     rights: "All rights reserved.",
-    madeIn: "Made in Colombia 🇨🇴",
+    madeIn: "Made in Colombia",
     privacy: "Privacy policy",
     contact: "Contact",
     playTrademark: "Google Play and the Google Play logo are trademarks of Google LLC.",

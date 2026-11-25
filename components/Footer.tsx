@@ -42,7 +42,7 @@ export default function Footer({ dictionary }: Props) {
           </a>
           . {footer.rights} {footer.madeIn}
         </p>
-        {site.isLaunched ? <p className="mt-2 text-xs">{footer.playTrademark}</p> : null}
+        <p className="mt-2 text-xs">{footer.playTrademark}</p>
       </div>
     </footer>
   );

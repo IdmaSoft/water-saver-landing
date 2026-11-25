@@ -21,15 +21,11 @@ export const es: Dictionary = {
       { href: "#faq", label: "Preguntas" },
     ],
     download: "Descargar",
-    comingSoon: "Muy pronto",
     switchLanguage: "Switch to English",
   },
   store: {
     badgeAlt: "Disponible en Google Play",
-    comingSoon: "Muy pronto en Google Play",
     androidOnly: "Gratis · Android 8.0 o más reciente",
-    testerCta: "¿Quieres probarla antes del lanzamiento? Escríbenos",
-    testerSubject: "Quiero probar Gotita",
   },
   hero: {
     eyebrow: "App gratis para Android",
@@ -146,47 +142,34 @@ export const es: Dictionary = {
         question: "¿Graba lo que pasa en el baño?",
         answer:
           "No. La app usa el micrófono solo para saber si el agua está corriendo. No graba nada ni envía audio. Tus duchas quedan en tu teléfono.",
-        prelaunchOnly: false,
       },
       {
         question: "¿Qué tan exacta es?",
         answer:
           "Mide aproximadamente: los tiempos y los litros son aproximados. Calibrar una vez con una jarra o un balde la ajusta a tu ducha, y puedes recalibrar cuando quieras.",
-        prelaunchOnly: false,
       },
       {
         question: "¿Tengo que instalar algo en la ducha?",
         answer:
           "No. Solo necesitas tu teléfono. Déjalo en el baño, lejos del agua, y funciona con la pantalla apagada.",
-        prelaunchOnly: false,
       },
       {
         question: "¿Está para iPhone?",
         answer: "Solo Android por ahora, en Android 8.0 o más reciente.",
-        prelaunchOnly: false,
       },
       {
         question: "¿Cuánto cuesta?",
         answer: "Es gratis. Sin publicidad y sin cuentas.",
-        prelaunchOnly: false,
       },
       {
         question: "¿La pueden usar mis hijos?",
         answer:
           "Sí, junto con un adulto. Está pensada para familias: la gota habla con emoji grandes y pocas palabras, para que toda la casa se sume.",
-        prelaunchOnly: false,
       },
       {
         question: "¿Qué pasa cuando cierro para enjabonarme?",
         answer:
           "Las pausas no cuentan. La app cuenta solo el tiempo con agua y, cada vez que cierras, la gota te dice cuánta agua te queda.",
-        prelaunchOnly: false,
-      },
-      {
-        question: "¿Cuándo la puedo descargar?",
-        answer:
-          "Gotita está en prueba cerrada y llegará muy pronto a Google Play. Si quieres probarla antes del lanzamiento, escríbenos.",
-        prelaunchOnly: true,
       },
     ],
   },
@@ -198,7 +181,7 @@ export const es: Dictionary = {
   },
   footer: {
     rights: "Todos los derechos reservados.",
-    madeIn: "Hecho en Colombia 🇨🇴",
+    madeIn: "Hecho en Colombia",
     privacy: "Política de privacidad",
     contact: "Contacto",
     playTrademark: "Google Play y el logotipo de Google Play son marcas de Google LLC.",

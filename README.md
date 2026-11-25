@@ -16,7 +16,6 @@ npm run dev            # http://localhost:3000
 | Variable | Uso |
 |---|---|
 | `NEXT_PUBLIC_APP_URL` | URL pública (canonical, hreflang, Open Graph, sitemap). En Vercel: el dominio final. |
-| `NEXT_PUBLIC_PLAY_LAUNCHED` | `false` (por defecto): muestra "Muy pronto en Google Play" y un enlace por correo para la prueba cerrada, sin enlazar a la tienda. `true`: muestra el badge oficial de Google Play enlazado a la ficha, la nota de marca de Google y oculta la pregunta "¿Cuándo la puedo descargar?". |
 
 ## Idiomas
 
@@ -30,13 +29,12 @@ npm run dev            # http://localhost:3000
 - `app/[locale]/page.tsx`: composición de secciones.
 - `app/global-not-found.tsx`: 404 bilingüe.
 - `components/`: `Navbar`, `Hero`, `HowItWorks`, `Features`, `Levels`, `Screenshots`, `Privacy`, `FAQ`, `FinalCTA`, `Footer`, y piezas como `Drop` (la mascota en SVG, con los accesorios de cada nivel), `StoreButton`, `PhoneFrame` y `Wave`.
-- `lib/site.ts`: enlaces (Play Store, política de privacidad, contacto) y el flag de lanzamiento.
+- `lib/site.ts`: enlaces (Play Store, política de privacidad, contacto).
 - `assets/images.ts`: imports estáticos de imágenes.
 
 ## Despliegue en Vercel
 
 Importa el repositorio en Vercel (framework Next.js, sin configuración extra) y define `NEXT_PUBLIC_APP_URL`.
-El día del lanzamiento público, cambia `NEXT_PUBLIC_PLAY_LAUNCHED=true` y vuelve a desplegar.
 
 ## Tecnología
 

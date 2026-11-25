@@ -35,11 +35,12 @@ export default function Navbar({ dictionary, locale }: Props) {
         <div className="flex shrink-0 items-center gap-2">
           <LocaleSwitcher locale={locale} dictionary={dictionary} />
           <a
-            href={site.isLaunched ? site.playStoreUrl : "#download"}
-            {...(site.isLaunched ? { target: "_blank", rel: "noopener" } : {})}
+            href={site.playStoreUrl}
+            target="_blank"
+            rel="noopener"
             className="hidden rounded-full bg-water px-5 py-2.5 text-sm font-extrabold text-white transition hover:bg-water-700 sm:inline-flex"
           >
-            {site.isLaunched ? dictionary.navbar.download : dictionary.navbar.comingSoon}
+            {dictionary.navbar.download}
           </a>
         </div>
       </div>
