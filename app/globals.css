@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Brand tokens from the app theme (BRIEF section 6) */
+@theme {
+  --color-water: #004c68;
+  --color-water-700: #00658a;
+  --color-water-100: #c2e8ff;
+  --color-teal: #006a6a;
+  --color-teal-100: #9cf1f0;
+  --color-leaf: #3b6939;
+  --color-leaf-100: #bcf0b4;
+  --color-sky: #d6eefa;
+  --color-card: #f7fcff;
+  --color-ink: #171c1f;
+  --color-muted: #41484d;
+  --color-drop-light: #8fdbff;
+  --color-drop: #2e9bd6;
+  --color-drop-line: #1b6c99;
+
+  --font-sans: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+
+  --animate-bob: bob 4s ease-in-out infinite;
+  --animate-fall: fall 1.6s linear infinite;
+
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes fall {
+    0% { transform: translateY(-8px); opacity: 0; }
+    20% { opacity: 1; }
+    100% { transform: translateY(28px); opacity: 0; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: var(--color-sky);
+  color: var(--color-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+details summary::-webkit-details-marker { display: none; }
+details .faq-icon { transition: transform 200ms ease; }
+details[open] .faq-icon { transform: rotate(45deg); }

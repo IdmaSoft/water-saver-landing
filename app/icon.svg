@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="108" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00658A"/><stop offset="1" stop-color="#004C68"/></linearGradient>
+    <linearGradient id="water" x1="0" y1="26" x2="0" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8FDBFF"/>
+      <stop offset="1" stop-color="#2E9BD6"/>
+    </linearGradient>
+  </defs>
+  <rect width="108" height="108" rx="24" fill="url(#bg)"/>
+  <path d="M54,26 C59.52,38.32 75.62,49.52 75.62,60.72 C75.62,74.16 65.96,82 54,82 C42.04,82 32.38,74.16 32.38,60.72 C32.38,49.52 48.48,38.32 54,26 Z" fill="url(#water)" stroke="#1B6C99" stroke-width="1.15"/>
+  <path fill="#FFFFFF" fill-opacity="0.55" d="M40.2,55.12 a2.76,5.6 0 1,0 5.52,0 a2.76,5.6 0 1,0 -5.52,0 Z"/>
+  <path fill="#FF8FA3" fill-opacity="0.6" d="M39.28,68.56 a3.22,3.22 0 1,0 6.44,0 a3.22,3.22 0 1,0 -6.44,0 Z M62.28,68.56 a3.22,3.22 0 1,0 6.44,0 a3.22,3.22 0 1,0 -6.44,0 Z"/>
+  <path fill="#0D2B3E" d="M45.49,61.84 a2.07,3.36 0 1,0 4.14,0 a2.07,3.36 0 1,0 -4.14,0 Z M58.37,61.84 a2.07,3.36 0 1,0 4.14,0 a2.07,3.36 0 1,0 -4.14,0 Z"/>
+  <path fill="#FFFFFF" d="M47.42,60.16 a0.83,0.83 0 1,0 1.66,0 a0.83,0.83 0 1,0 -1.66,0 Z M60.3,60.16 a0.83,0.83 0 1,0 1.66,0 a0.83,0.83 0 1,0 -1.66,0 Z"/>
+  <path fill="none" stroke="#0D2B3E" stroke-width="1.61" stroke-linecap="round" d="M50.32,70.8 Q54,75.28 57.68,70.8"/>
+</svg>
