@@ -10,7 +10,7 @@ type Props = {
   dictionary: Dictionary;
 };
 
-// Left-aligned carousel: ~1.5 phones visible on mobile, 3 on tablet, 4 on desktop.
+// Mobile: one centered phone with a peek of its neighbors. Tablet: 3 phones. Desktop: 4 phones, left-aligned.
 // All cards look the same, so nothing depends on a "current" item being highlighted.
 export default function Screenshots({ dictionary }: Props) {
   const { screenshots } = dictionary;
@@ -78,12 +78,12 @@ export default function Screenshots({ dictionary }: Props) {
         <div className="relative mt-12">
           <ul
             ref={carouselRef}
-            className="-mx-6 flex snap-x snap-mandatory scroll-px-6 gap-5 overflow-x-auto px-6 pb-6 pt-2 scrollbar-none lg:mx-0 lg:scroll-px-0 lg:gap-6 lg:px-0"
+            className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[16vw] pb-6 pt-2 scrollbar-none sm:scroll-px-6 sm:gap-5 sm:px-6 lg:mx-0 lg:scroll-px-0 lg:gap-6 lg:px-0"
           >
             {screenshots.items.map((screenshot) => (
               <li
                 key={screenshot.caption}
-                className="w-[62%] shrink-0 snap-start sm:w-[calc((100%-2.5rem)/3)] lg:w-[calc((100%-4.5rem)/4)]"
+                className="w-[68vw] shrink-0 snap-center sm:w-[calc((100%-2.5rem)/3)] sm:snap-start lg:w-[calc((100%-4.5rem)/4)]"
               >
                 <figure>
                   <div className="rounded-[2.4rem] bg-ink p-[6px] shadow-[0_24px_50px_-24px_rgba(0,76,104,0.55)]">
@@ -94,7 +94,7 @@ export default function Screenshots({ dictionary }: Props) {
                         fill
                         placeholder="blur"
                         className="object-cover"
-                        sizes="(max-width: 640px) 62vw, (max-width: 1024px) 31vw, 270px"
+                        sizes="(max-width: 640px) 68vw, (max-width: 1024px) 31vw, 270px"
                       />
                     </div>
                   </div>
